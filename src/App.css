@@ -1,38 +1,248 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.header{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.header h1{
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+.leftsidebar{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 88px;
+  height: 100%;
+  position: fixed;
+  padding: 0 20px;
+}
+
+.leftsidebar h2{
+  font-family: 'Poppins', sans-serif;
+}
+
+.leftbtn{
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  transition: all 0.4s;
+}
+
+.leftbtn:hover{
+  color: #fff;
+  background-color: transparent;
+}
+
+.righthome{
+  position: relative;
+  top: 100px;
+}
+
+.deletebtn{
+  color: red;
+  margin-left: 10px;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.deletebutton{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* .deletebtn:hover, .editbtn:hover, .viewbtn:hover{
+  transform: scale(1.5);
+} */
+
+.editbtn{
+  color: green;
+  margin-left: 10px;
+  transition: all 0.4s;
+  position: relative;
+}
+
+.viewbtn{
+  color: blue;
+  transition: all 0.4s;
+  position: relative;
+}
+
+
+.viewbtn:hover .tooltiptext, .editbtn:hover .tooltiptext, .deletebtn:hover .tooltiptext{
+ display: block !important;
+}
+
+
+.tooltiptext {
+  display: none;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: -3px;
+  left: 24px;
+  z-index: 1;
+}
+
+.backbtn{
+  color: #fff;
+  text-decoration: none;
+  background: #000;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  transition: all 0.4s;
+}
+
+.backbtn:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.fieldset{
+  border: 1px solid #000;
+  padding-left: 15px;
+  border-radius: 5px;
+  padding-right: 5px;
+}
+
+.fieldset legend{
+  float: none;
+  width: auto;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fieldset input{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.submitbtn{
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 20px;
+  transition: all 0.3s;
+}
+
+.submitbtn:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.detailul{
+  list-style-type: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 11px 20px;
+}
+
+.detailul li{
+  font-size: 20px;
+}
+
+.detailul li span{
+  font-weight: 600;
+  padding-left: 10px;
+  color: red;
+}
+
+.logindiv{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
+.loginform{
+  width: 30%;
+}
+
+.loginform fieldset{
+  border: 1px solid #fff;
+}
+
+.loginform fieldset legend{
+  color: #fff;
+}
+
+.loginform fieldset input{
+  background-color: transparent;
+}
+
+.loginform fieldset input:focus{
+  background-color: transparent;
+}
+
+.loginbtn{
+  user-select: auto;
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.5s;
+}
+
+.loginbtn:hover{
+  background-color: transparent;
+  color: #fff;
+}
+
+.logindiv input{
+  color: #fff;
+}
+
+.frontdiv{
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frontbtn{
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.5s;
+  width: 20%;
+  margin-left: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.frontbtn:hover{
+  background-color: transparent;
+  color: #fff;
 }

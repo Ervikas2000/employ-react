@@ -1,0 +1,42 @@
+{
+  "employ": [
+    {
+      "name": "admin",
+      "phone": "23242433534",
+      "age": "22",
+      "address": "indore",
+      "salary": "56",
+      "dateojoin": "2022-07-20",
+      "id": 1
+    }
+  ],
+  "user": [
+    {
+      "username": "admin",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "username": "vikas",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "neha",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "stoken": [
+    {
+      "token": "58456",
+      "id": 1
+    }
+  ],
+  "indexuser": [
+    {
+      "findex": -1,
+      "id": 1
+    }
+  ]
+}
