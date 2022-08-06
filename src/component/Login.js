@@ -12,10 +12,7 @@ export default function Login() {
 
   const [alluser, setAllUser] = useState([])
 
-  // const [indexuser, setIndexuser] = useState({
-  //   findex:""
-  // })
-
+ 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value })
   }
@@ -87,7 +84,7 @@ export default function Login() {
         "findex":indexofuser + 1
       }
       axios.put(`http://localhost:3005/indexuser/${1}`, indobj)
-      navigate("/tokencheck")
+      navigate("/home")
     }else{
       alert("username or password error")
     }

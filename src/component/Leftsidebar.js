@@ -46,7 +46,8 @@ export default function Leftsidebar() {
         navigate("/")
     }
 
-    
+
+
   return (
     <>
         <div className='leftsidebar'>
@@ -63,9 +64,14 @@ export default function Leftsidebar() {
             </div>
 
             <div className='mt-5'>
+                <Link to="/changepass" className='leftbtn'>Change Password</Link>
+            </div>
+
+            <div className='mt-5'>
                 <button  className='leftbtn' onClick={() => logout()}>Logout</button>
             </div>
         </div>
     </>
   )
 }
+

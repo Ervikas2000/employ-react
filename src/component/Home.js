@@ -2,29 +2,11 @@ import React,  {useState, useEffect} from 'react'
 import Header from './Header'
 import Leftsidebar from './Leftsidebar'
 import chart from '../images/chart.avif'
-// import axios from 'axios'
 
 export default function Home() {
 
 
-    // const [token, setToken] = useState([]);
-
-    // useEffect(() => {
-    //     alltoken();
-    // }, [])
-
-    // const alltoken = async () => {
-    //     const result = await axios.get(`http://localhost:3005/stoken/${1}`)
-    //     setToken(result.data)
-    // }
-
-    // if(token.token == "58456"){
-    //     alert("ok")
-    // }else{
-    //     alert("error")
-    // }
-
-    // console.log(token.token);
+   
   return (
     <>
         < Header />
@@ -48,3 +30,5 @@ export default function Home() {
     </>
   )
 }
+
+

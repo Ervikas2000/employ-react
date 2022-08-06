@@ -1,36 +1,52 @@
 {
   "employ": [
     {
-      "name": "admin",
+      "name": "abc",
       "phone": "23242433534",
       "age": "22",
       "address": "indore",
-      "salary": "56",
+      "salary": "20000",
+      "dateojoin": "2022-07-10",
+      "id": 2
+    },
+    {
+      "name": "admin",
+      "phone": "23242433534",
+      "age": "25",
+      "address": "25",
+      "salary": "25",
+      "dateojoin": "2022-07-25",
+      "id": 3
+    },
+    {
+      "name": "Test",
+      "phone": "23242433534",
+      "age": "65454",
+      "address": "45454",
+      "salary": "545456",
       "dateojoin": "2022-07-20",
-      "id": 1
+      "id": 4
+    },
+    {
+      "name": "vikas",
+      "phone": "23242433534",
+      "age": "20",
+      "address": "20",
+      "salary": "20",
+      "dateojoin": "2022-06-28",
+      "id": 5
     }
   ],
   "user": [
     {
       "username": "admin",
-      "password": "123456",
+      "password": "123",
       "id": 1
     },
     {
       "username": "vikas",
-      "password": "123",
+      "password": "12",
       "id": 2
-    },
-    {
-      "username": "neha",
-      "password": "123",
-      "id": 3
-    }
-  ],
-  "stoken": [
-    {
-      "token": "58456",
-      "id": 1
     }
   ],
   "indexuser": [
